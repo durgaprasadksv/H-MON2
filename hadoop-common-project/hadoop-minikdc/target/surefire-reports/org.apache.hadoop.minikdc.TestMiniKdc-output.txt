@@ -1,0 +1,72 @@
+2015-02-19 19:35:19,706 INFO  MiniKdc - Configuration:
+2015-02-19 19:35:19,708 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:35:19,710 INFO  MiniKdc -   debug: false
+2015-02-19 19:35:19,710 INFO  MiniKdc -   transport: TCP
+2015-02-19 19:35:19,710 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2015-02-19 19:35:19,710 INFO  MiniKdc -   org.name: EXAMPLE
+2015-02-19 19:35:19,710 INFO  MiniKdc -   kdc.port: 0
+2015-02-19 19:35:19,710 INFO  MiniKdc -   org.domain: COM
+2015-02-19 19:35:19,710 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2015-02-19 19:35:19,711 INFO  MiniKdc -   instance: DefaultKrbServer
+2015-02-19 19:35:19,711 INFO  MiniKdc -   kdc.bind.address: localhost
+2015-02-19 19:35:19,711 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:35:27,480 INFO  KdcServer - Kerberos service started.
+2015-02-19 19:35:27,501 INFO  MiniKdc - MiniKdc listening at port: 53721
+2015-02-19 19:35:27,501 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: /Users/maverick/git/H-MON2/hadoop-common-project/hadoop-minikdc/target/1424392519705/krb5.conf
+2015-02-19 19:35:27,663 INFO  KdcServer - Kerberos service stopped.
+2015-02-19 19:35:28,142 INFO  MiniKdc - Configuration:
+2015-02-19 19:35:28,142 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:35:28,142 INFO  MiniKdc -   debug: false
+2015-02-19 19:35:28,142 INFO  MiniKdc -   transport: TCP
+2015-02-19 19:35:28,142 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2015-02-19 19:35:28,142 INFO  MiniKdc -   org.name: EXAMPLE
+2015-02-19 19:35:28,142 INFO  MiniKdc -   kdc.port: 0
+2015-02-19 19:35:28,143 INFO  MiniKdc -   org.domain: COM
+2015-02-19 19:35:28,143 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2015-02-19 19:35:28,143 INFO  MiniKdc -   instance: DefaultKrbServer
+2015-02-19 19:35:28,143 INFO  MiniKdc -   kdc.bind.address: localhost
+2015-02-19 19:35:28,143 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:35:30,891 INFO  KdcServer - Kerberos service started.
+2015-02-19 19:35:30,892 INFO  MiniKdc - MiniKdc listening at port: 53725
+2015-02-19 19:35:30,892 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: /Users/maverick/git/H-MON2/hadoop-common-project/hadoop-minikdc/target/1424392528142/krb5.conf
+2015-02-19 19:35:30,895 INFO  KdcServer - Kerberos service stopped.
+2015-02-19 19:35:31,191 INFO  MiniKdc - Configuration:
+2015-02-19 19:35:31,191 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:35:31,191 INFO  MiniKdc -   debug: false
+2015-02-19 19:35:31,191 INFO  MiniKdc -   transport: TCP
+2015-02-19 19:35:31,192 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2015-02-19 19:35:31,192 INFO  MiniKdc -   org.name: EXAMPLE
+2015-02-19 19:35:31,192 INFO  MiniKdc -   kdc.port: 0
+2015-02-19 19:35:31,192 INFO  MiniKdc -   org.domain: COM
+2015-02-19 19:35:31,192 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2015-02-19 19:35:31,192 INFO  MiniKdc -   instance: DefaultKrbServer
+2015-02-19 19:35:31,192 INFO  MiniKdc -   kdc.bind.address: localhost
+2015-02-19 19:35:31,192 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:35:33,616 INFO  KdcServer - Kerberos service started.
+2015-02-19 19:35:33,617 INFO  MiniKdc - MiniKdc listening at port: 53726
+2015-02-19 19:35:33,617 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: /Users/maverick/git/H-MON2/hadoop-common-project/hadoop-minikdc/target/1424392531191/krb5.conf
+Debug is  true storeKey true useTicketCache true useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is /Users/maverick/git/H-MON2/hadoop-common-project/hadoop-minikdc/target/foo.keytab refreshKrb5Config is true principal is foo tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+Acquire TGT from Cache
+Principal is foo@EXAMPLE.COM
+null credentials from Ticket Cache
+principal is foo@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+Debug is  true storeKey true useTicketCache true useKeyTab true doNotPrompt true ticketCache is null isInitiator false KeyTab is /Users/maverick/git/H-MON2/hadoop-common-project/hadoop-minikdc/target/foo.keytab refreshKrb5Config is true principal is foo tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+Acquire TGT from Cache
+Principal is foo@EXAMPLE.COM
+null credentials from Ticket Cache
+principal is foo@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+2015-02-19 19:35:34,081 INFO  KdcServer - Kerberos service stopped.

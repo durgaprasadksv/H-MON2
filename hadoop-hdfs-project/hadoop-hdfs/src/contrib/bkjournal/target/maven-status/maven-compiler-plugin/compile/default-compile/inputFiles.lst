@@ -1,0 +1,7 @@
+/Users/maverick/git/H-MON2/hadoop-hdfs-project/hadoop-hdfs/src/contrib/bkjournal/src/main/java/org/apache/hadoop/contrib/bkjournal/BookKeeperEditLogInputStream.java
+/Users/maverick/git/H-MON2/hadoop-hdfs-project/hadoop-hdfs/src/contrib/bkjournal/src/main/java/org/apache/hadoop/contrib/bkjournal/EditLogLedgerMetadata.java
+/Users/maverick/git/H-MON2/hadoop-hdfs-project/hadoop-hdfs/src/contrib/bkjournal/src/main/java/org/apache/hadoop/contrib/bkjournal/CurrentInprogress.java
+/Users/maverick/git/H-MON2/hadoop-hdfs-project/hadoop-hdfs/src/contrib/bkjournal/src/main/java/org/apache/hadoop/contrib/bkjournal/BookKeeperEditLogOutputStream.java
+/Users/maverick/git/H-MON2/hadoop-hdfs-project/hadoop-hdfs/src/contrib/bkjournal/target/generated-sources/java/org/apache/hadoop/contrib/bkjournal/BKJournalProtos.java
+/Users/maverick/git/H-MON2/hadoop-hdfs-project/hadoop-hdfs/src/contrib/bkjournal/src/main/java/org/apache/hadoop/contrib/bkjournal/BookKeeperJournalManager.java
+/Users/maverick/git/H-MON2/hadoop-hdfs-project/hadoop-hdfs/src/contrib/bkjournal/src/main/java/org/apache/hadoop/contrib/bkjournal/MaxTxId.java

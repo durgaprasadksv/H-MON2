@@ -1,0 +1,463 @@
+2015-02-19 19:36:06,384 INFO  MiniKdc - Configuration:
+2015-02-19 19:36:06,385 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:06,389 INFO  MiniKdc -   debug: false
+2015-02-19 19:36:06,389 INFO  MiniKdc -   transport: TCP
+2015-02-19 19:36:06,389 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2015-02-19 19:36:06,389 INFO  MiniKdc -   org.name: EXAMPLE
+2015-02-19 19:36:06,390 INFO  MiniKdc -   kdc.port: 0
+2015-02-19 19:36:06,390 INFO  MiniKdc -   org.domain: COM
+2015-02-19 19:36:06,390 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2015-02-19 19:36:06,390 INFO  MiniKdc -   instance: DefaultKrbServer
+2015-02-19 19:36:06,391 INFO  MiniKdc -   kdc.bind.address: localhost
+2015-02-19 19:36:06,391 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:16,991 INFO  KdcServer - Kerberos service started.
+2015-02-19 19:36:17,012 INFO  MiniKdc - MiniKdc listening at port: 53888
+2015-02-19 19:36:17,012 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: /Users/maverick/git/H-MON2/hadoop-common-project/hadoop-auth/target/1424392566383/krb5.conf
+2015-02-19 19:36:17,182 INFO  log - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-02-19 19:36:17,239 INFO  log - jetty-6.1.26
+2015-02-19 19:36:17,319 INFO  KerberosAuthenticationHandler - Login using keytab target/be0d9981-f243-4ab5-b0fa-aec279023946, for principal HTTP/localhost@EXAMPLE.COM
+2015-02-19 19:36:17,405 INFO  log - Started SocketConnector@localhost:53893
+Running embedded servlet container at: http://localhost:53893
+2015-02-19 19:36:17,591 INFO  log - Stopped SocketConnector@localhost:53893
+2015-02-19 19:36:17,600 INFO  KdcServer - Kerberos service stopped.
+2015-02-19 19:36:18,028 INFO  MiniKdc - Configuration:
+2015-02-19 19:36:18,028 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:18,028 INFO  MiniKdc -   debug: false
+2015-02-19 19:36:18,028 INFO  MiniKdc -   transport: TCP
+2015-02-19 19:36:18,028 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2015-02-19 19:36:18,028 INFO  MiniKdc -   org.name: EXAMPLE
+2015-02-19 19:36:18,029 INFO  MiniKdc -   kdc.port: 0
+2015-02-19 19:36:18,029 INFO  MiniKdc -   org.domain: COM
+2015-02-19 19:36:18,029 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2015-02-19 19:36:18,029 INFO  MiniKdc -   instance: DefaultKrbServer
+2015-02-19 19:36:18,029 INFO  MiniKdc -   kdc.bind.address: localhost
+2015-02-19 19:36:18,029 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:20,624 INFO  KdcServer - Kerberos service started.
+2015-02-19 19:36:20,625 INFO  MiniKdc - MiniKdc listening at port: 53895
+2015-02-19 19:36:20,625 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: /Users/maverick/git/H-MON2/hadoop-common-project/hadoop-auth/target/1424392578028/krb5.conf
+Debug is  true storeKey true useTicketCache true useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is target/be0d9981-f243-4ab5-b0fa-aec279023946 refreshKrb5Config is true principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+Acquire TGT from Cache
+Principal is client@EXAMPLE.COM
+null credentials from Ticket Cache
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+2015-02-19 19:36:20,881 INFO  log - jetty-6.1.26
+2015-02-19 19:36:20,884 INFO  KerberosAuthenticationHandler - Login using keytab target/be0d9981-f243-4ab5-b0fa-aec279023946, for principal HTTP/localhost@EXAMPLE.COM
+2015-02-19 19:36:20,886 INFO  log - Started SocketConnector@localhost:53897
+Running embedded servlet container at: http://localhost:53897
+2015-02-19 19:36:21,522 INFO  log - Stopped SocketConnector@localhost:53897
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+2015-02-19 19:36:21,526 INFO  KdcServer - Kerberos service stopped.
+2015-02-19 19:36:21,982 INFO  MiniKdc - Configuration:
+2015-02-19 19:36:21,982 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:21,982 INFO  MiniKdc -   debug: false
+2015-02-19 19:36:21,982 INFO  MiniKdc -   transport: TCP
+2015-02-19 19:36:21,983 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2015-02-19 19:36:21,983 INFO  MiniKdc -   org.name: EXAMPLE
+2015-02-19 19:36:21,983 INFO  MiniKdc -   kdc.port: 0
+2015-02-19 19:36:21,984 INFO  MiniKdc -   org.domain: COM
+2015-02-19 19:36:21,984 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2015-02-19 19:36:21,984 INFO  MiniKdc -   instance: DefaultKrbServer
+2015-02-19 19:36:21,984 INFO  MiniKdc -   kdc.bind.address: localhost
+2015-02-19 19:36:21,985 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:24,355 INFO  KdcServer - Kerberos service started.
+2015-02-19 19:36:24,356 INFO  MiniKdc - MiniKdc listening at port: 53900
+2015-02-19 19:36:24,356 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: /Users/maverick/git/H-MON2/hadoop-common-project/hadoop-auth/target/1424392581982/krb5.conf
+Debug is  true storeKey true useTicketCache true useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is target/be0d9981-f243-4ab5-b0fa-aec279023946 refreshKrb5Config is true principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+Acquire TGT from Cache
+Principal is client@EXAMPLE.COM
+null credentials from Ticket Cache
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+2015-02-19 19:36:24,463 INFO  log - jetty-6.1.26
+2015-02-19 19:36:24,468 INFO  KerberosAuthenticationHandler - Login using keytab target/be0d9981-f243-4ab5-b0fa-aec279023946, for principal HTTP/localhost@EXAMPLE.COM
+2015-02-19 19:36:24,470 INFO  log - Started SocketConnector@localhost:53902
+Running embedded servlet container at: http://localhost:53902
+2015-02-19 19:36:24,526 INFO  log - Stopped SocketConnector@localhost:53902
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+2015-02-19 19:36:24,529 INFO  KdcServer - Kerberos service stopped.
+2015-02-19 19:36:24,949 INFO  MiniKdc - Configuration:
+2015-02-19 19:36:24,949 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:24,949 INFO  MiniKdc -   debug: false
+2015-02-19 19:36:24,949 INFO  MiniKdc -   transport: TCP
+2015-02-19 19:36:24,949 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2015-02-19 19:36:24,949 INFO  MiniKdc -   org.name: EXAMPLE
+2015-02-19 19:36:24,950 INFO  MiniKdc -   kdc.port: 0
+2015-02-19 19:36:24,950 INFO  MiniKdc -   org.domain: COM
+2015-02-19 19:36:24,950 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2015-02-19 19:36:24,950 INFO  MiniKdc -   instance: DefaultKrbServer
+2015-02-19 19:36:24,950 INFO  MiniKdc -   kdc.bind.address: localhost
+2015-02-19 19:36:24,950 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:27,138 INFO  KdcServer - Kerberos service started.
+2015-02-19 19:36:27,139 INFO  MiniKdc - MiniKdc listening at port: 53905
+2015-02-19 19:36:27,140 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: /Users/maverick/git/H-MON2/hadoop-common-project/hadoop-auth/target/1424392584949/krb5.conf
+Debug is  true storeKey true useTicketCache true useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is target/be0d9981-f243-4ab5-b0fa-aec279023946 refreshKrb5Config is true principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+Acquire TGT from Cache
+Principal is client@EXAMPLE.COM
+null credentials from Ticket Cache
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+2015-02-19 19:36:27,226 INFO  log - jetty-6.1.26
+2015-02-19 19:36:27,228 INFO  KerberosAuthenticationHandler - Login using keytab target/be0d9981-f243-4ab5-b0fa-aec279023946, for principal HTTP/localhost@EXAMPLE.COM
+2015-02-19 19:36:27,231 INFO  log - Started SocketConnector@localhost:53907
+Running embedded servlet container at: http://localhost:53907
+2015-02-19 19:36:27,264 INFO  log - Stopped SocketConnector@localhost:53907
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+2015-02-19 19:36:27,266 INFO  KdcServer - Kerberos service stopped.
+2015-02-19 19:36:27,577 INFO  MiniKdc - Configuration:
+2015-02-19 19:36:27,578 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:27,578 INFO  MiniKdc -   debug: false
+2015-02-19 19:36:27,578 INFO  MiniKdc -   transport: TCP
+2015-02-19 19:36:27,579 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2015-02-19 19:36:27,579 INFO  MiniKdc -   org.name: EXAMPLE
+2015-02-19 19:36:27,579 INFO  MiniKdc -   kdc.port: 0
+2015-02-19 19:36:27,579 INFO  MiniKdc -   org.domain: COM
+2015-02-19 19:36:27,579 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2015-02-19 19:36:27,579 INFO  MiniKdc -   instance: DefaultKrbServer
+2015-02-19 19:36:27,580 INFO  MiniKdc -   kdc.bind.address: localhost
+2015-02-19 19:36:27,580 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:30,194 INFO  KdcServer - Kerberos service started.
+2015-02-19 19:36:30,197 INFO  MiniKdc - MiniKdc listening at port: 53910
+2015-02-19 19:36:30,197 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: /Users/maverick/git/H-MON2/hadoop-common-project/hadoop-auth/target/1424392587577/krb5.conf
+2015-02-19 19:36:30,280 INFO  log - jetty-6.1.26
+2015-02-19 19:36:30,283 INFO  log - Started SocketConnector@localhost:53911
+Running embedded servlet container at: http://localhost:53911
+2015-02-19 19:36:30,291 INFO  log - Stopped SocketConnector@localhost:53911
+2015-02-19 19:36:30,294 INFO  KdcServer - Kerberos service stopped.
+2015-02-19 19:36:30,566 INFO  MiniKdc - Configuration:
+2015-02-19 19:36:30,566 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:30,567 INFO  MiniKdc -   debug: false
+2015-02-19 19:36:30,567 INFO  MiniKdc -   transport: TCP
+2015-02-19 19:36:30,567 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2015-02-19 19:36:30,567 INFO  MiniKdc -   org.name: EXAMPLE
+2015-02-19 19:36:30,567 INFO  MiniKdc -   kdc.port: 0
+2015-02-19 19:36:30,567 INFO  MiniKdc -   org.domain: COM
+2015-02-19 19:36:30,567 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2015-02-19 19:36:30,567 INFO  MiniKdc -   instance: DefaultKrbServer
+2015-02-19 19:36:30,567 INFO  MiniKdc -   kdc.bind.address: localhost
+2015-02-19 19:36:30,567 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:32,268 INFO  KdcServer - Kerberos service started.
+2015-02-19 19:36:32,269 INFO  MiniKdc - MiniKdc listening at port: 53913
+2015-02-19 19:36:32,269 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: /Users/maverick/git/H-MON2/hadoop-common-project/hadoop-auth/target/1424392590566/krb5.conf
+2015-02-19 19:36:32,413 INFO  log - jetty-6.1.26
+2015-02-19 19:36:32,414 INFO  log - Started SocketConnector@localhost:53914
+Running embedded servlet container at: http://localhost:53914
+2015-02-19 19:36:32,422 INFO  log - Stopped SocketConnector@localhost:53914
+2015-02-19 19:36:32,424 INFO  KdcServer - Kerberos service stopped.
+2015-02-19 19:36:32,625 INFO  MiniKdc - Configuration:
+2015-02-19 19:36:32,625 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:32,625 INFO  MiniKdc -   debug: false
+2015-02-19 19:36:32,625 INFO  MiniKdc -   transport: TCP
+2015-02-19 19:36:32,626 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2015-02-19 19:36:32,626 INFO  MiniKdc -   org.name: EXAMPLE
+2015-02-19 19:36:32,626 INFO  MiniKdc -   kdc.port: 0
+2015-02-19 19:36:32,626 INFO  MiniKdc -   org.domain: COM
+2015-02-19 19:36:32,627 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2015-02-19 19:36:32,629 INFO  MiniKdc -   instance: DefaultKrbServer
+2015-02-19 19:36:32,629 INFO  MiniKdc -   kdc.bind.address: localhost
+2015-02-19 19:36:32,630 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:34,688 INFO  KdcServer - Kerberos service started.
+2015-02-19 19:36:34,689 INFO  MiniKdc - MiniKdc listening at port: 53916
+2015-02-19 19:36:34,689 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: /Users/maverick/git/H-MON2/hadoop-common-project/hadoop-auth/target/1424392592625/krb5.conf
+Debug is  true storeKey true useTicketCache true useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is target/be0d9981-f243-4ab5-b0fa-aec279023946 refreshKrb5Config is true principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+Acquire TGT from Cache
+Principal is client@EXAMPLE.COM
+null credentials from Ticket Cache
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+2015-02-19 19:36:34,777 INFO  log - jetty-6.1.26
+2015-02-19 19:36:34,779 INFO  KerberosAuthenticationHandler - Login using keytab target/be0d9981-f243-4ab5-b0fa-aec279023946, for principal HTTP/localhost@EXAMPLE.COM
+2015-02-19 19:36:34,789 INFO  log - Started SocketConnector@localhost:53918
+Running embedded servlet container at: http://localhost:53918
+2015-02-19 19:36:34,828 INFO  log - Stopped SocketConnector@localhost:53918
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+2015-02-19 19:36:34,834 INFO  KdcServer - Kerberos service stopped.
+2015-02-19 19:36:35,684 INFO  MiniKdc - Configuration:
+2015-02-19 19:36:35,684 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:35,684 INFO  MiniKdc -   debug: false
+2015-02-19 19:36:35,684 INFO  MiniKdc -   transport: TCP
+2015-02-19 19:36:35,685 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2015-02-19 19:36:35,685 INFO  MiniKdc -   org.name: EXAMPLE
+2015-02-19 19:36:35,685 INFO  MiniKdc -   kdc.port: 0
+2015-02-19 19:36:35,686 INFO  MiniKdc -   org.domain: COM
+2015-02-19 19:36:35,686 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2015-02-19 19:36:35,686 INFO  MiniKdc -   instance: DefaultKrbServer
+2015-02-19 19:36:35,686 INFO  MiniKdc -   kdc.bind.address: localhost
+2015-02-19 19:36:35,687 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:37,275 INFO  KdcServer - Kerberos service started.
+2015-02-19 19:36:37,276 INFO  MiniKdc - MiniKdc listening at port: 53921
+2015-02-19 19:36:37,276 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: /Users/maverick/git/H-MON2/hadoop-common-project/hadoop-auth/target/1424392595684/krb5.conf
+Feb 19, 2015 7:36:37 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-53922"]
+Feb 19, 2015 7:36:37 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Tomcat
+Feb 19, 2015 7:36:37 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.55
+2015-02-19 19:36:38,118 INFO  KerberosAuthenticationHandler - Login using keytab target/be0d9981-f243-4ab5-b0fa-aec279023946, for principal HTTP/localhost@EXAMPLE.COM
+Feb 19, 2015 7:36:38 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-53922"]
+Feb 19, 2015 7:36:38 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-53922"]
+Feb 19, 2015 7:36:38 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Tomcat
+Feb 19, 2015 7:36:38 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-53922"]
+Feb 19, 2015 7:36:38 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-53922"]
+2015-02-19 19:36:38,402 INFO  KdcServer - Kerberos service stopped.
+2015-02-19 19:36:38,770 INFO  MiniKdc - Configuration:
+2015-02-19 19:36:38,770 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:38,773 INFO  MiniKdc -   debug: false
+2015-02-19 19:36:38,773 INFO  MiniKdc -   transport: TCP
+2015-02-19 19:36:38,773 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2015-02-19 19:36:38,773 INFO  MiniKdc -   org.name: EXAMPLE
+2015-02-19 19:36:38,774 INFO  MiniKdc -   kdc.port: 0
+2015-02-19 19:36:38,774 INFO  MiniKdc -   org.domain: COM
+2015-02-19 19:36:38,774 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2015-02-19 19:36:38,774 INFO  MiniKdc -   instance: DefaultKrbServer
+2015-02-19 19:36:38,774 INFO  MiniKdc -   kdc.bind.address: localhost
+2015-02-19 19:36:38,774 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:41,030 INFO  KdcServer - Kerberos service started.
+2015-02-19 19:36:41,031 INFO  MiniKdc - MiniKdc listening at port: 53925
+2015-02-19 19:36:41,031 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: /Users/maverick/git/H-MON2/hadoop-common-project/hadoop-auth/target/1424392598770/krb5.conf
+Debug is  true storeKey true useTicketCache true useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is target/be0d9981-f243-4ab5-b0fa-aec279023946 refreshKrb5Config is true principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+Acquire TGT from Cache
+Principal is client@EXAMPLE.COM
+null credentials from Ticket Cache
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Feb 19, 2015 7:36:41 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-53927"]
+Feb 19, 2015 7:36:41 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Tomcat
+Feb 19, 2015 7:36:41 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.55
+2015-02-19 19:36:41,109 INFO  KerberosAuthenticationHandler - Login using keytab target/be0d9981-f243-4ab5-b0fa-aec279023946, for principal HTTP/localhost@EXAMPLE.COM
+Feb 19, 2015 7:36:41 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-53927"]
+Feb 19, 2015 7:36:41 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-53927"]
+Feb 19, 2015 7:36:41 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Tomcat
+Feb 19, 2015 7:36:41 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-53927"]
+Feb 19, 2015 7:36:41 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-53927"]
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+2015-02-19 19:36:41,201 INFO  KdcServer - Kerberos service stopped.
+2015-02-19 19:36:41,401 INFO  MiniKdc - Configuration:
+2015-02-19 19:36:41,401 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:41,402 INFO  MiniKdc -   debug: false
+2015-02-19 19:36:41,402 INFO  MiniKdc -   transport: TCP
+2015-02-19 19:36:41,402 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2015-02-19 19:36:41,402 INFO  MiniKdc -   org.name: EXAMPLE
+2015-02-19 19:36:41,402 INFO  MiniKdc -   kdc.port: 0
+2015-02-19 19:36:41,402 INFO  MiniKdc -   org.domain: COM
+2015-02-19 19:36:41,402 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2015-02-19 19:36:41,402 INFO  MiniKdc -   instance: DefaultKrbServer
+2015-02-19 19:36:41,402 INFO  MiniKdc -   kdc.bind.address: localhost
+2015-02-19 19:36:41,402 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:44,072 INFO  KdcServer - Kerberos service started.
+2015-02-19 19:36:44,074 INFO  MiniKdc - MiniKdc listening at port: 53931
+2015-02-19 19:36:44,074 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: /Users/maverick/git/H-MON2/hadoop-common-project/hadoop-auth/target/1424392601401/krb5.conf
+Debug is  true storeKey true useTicketCache true useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is target/be0d9981-f243-4ab5-b0fa-aec279023946 refreshKrb5Config is true principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+Acquire TGT from Cache
+Principal is client@EXAMPLE.COM
+null credentials from Ticket Cache
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Feb 19, 2015 7:36:44 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-53933"]
+Feb 19, 2015 7:36:44 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Tomcat
+Feb 19, 2015 7:36:44 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.55
+2015-02-19 19:36:44,170 INFO  KerberosAuthenticationHandler - Login using keytab target/be0d9981-f243-4ab5-b0fa-aec279023946, for principal HTTP/localhost@EXAMPLE.COM
+Feb 19, 2015 7:36:44 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-53933"]
+Feb 19, 2015 7:36:44 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-53933"]
+Feb 19, 2015 7:36:44 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Tomcat
+Feb 19, 2015 7:36:44 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-53933"]
+Feb 19, 2015 7:36:44 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-53933"]
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+2015-02-19 19:36:44,276 INFO  KdcServer - Kerberos service stopped.
+2015-02-19 19:36:45,097 INFO  MiniKdc - Configuration:
+2015-02-19 19:36:45,097 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:45,097 INFO  MiniKdc -   debug: false
+2015-02-19 19:36:45,097 INFO  MiniKdc -   transport: TCP
+2015-02-19 19:36:45,097 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2015-02-19 19:36:45,097 INFO  MiniKdc -   org.name: EXAMPLE
+2015-02-19 19:36:45,097 INFO  MiniKdc -   kdc.port: 0
+2015-02-19 19:36:45,098 INFO  MiniKdc -   org.domain: COM
+2015-02-19 19:36:45,098 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2015-02-19 19:36:45,098 INFO  MiniKdc -   instance: DefaultKrbServer
+2015-02-19 19:36:45,098 INFO  MiniKdc -   kdc.bind.address: localhost
+2015-02-19 19:36:45,098 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:47,078 INFO  KdcServer - Kerberos service started.
+2015-02-19 19:36:47,078 INFO  MiniKdc - MiniKdc listening at port: 53938
+2015-02-19 19:36:47,079 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: /Users/maverick/git/H-MON2/hadoop-common-project/hadoop-auth/target/1424392605097/krb5.conf
+Debug is  true storeKey true useTicketCache true useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is target/be0d9981-f243-4ab5-b0fa-aec279023946 refreshKrb5Config is true principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+Acquire TGT from Cache
+Principal is client@EXAMPLE.COM
+null credentials from Ticket Cache
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Feb 19, 2015 7:36:47 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-53940"]
+Feb 19, 2015 7:36:47 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Tomcat
+Feb 19, 2015 7:36:47 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.55
+2015-02-19 19:36:47,174 INFO  KerberosAuthenticationHandler - Login using keytab target/be0d9981-f243-4ab5-b0fa-aec279023946, for principal HTTP/localhost@EXAMPLE.COM
+Feb 19, 2015 7:36:47 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-53940"]
+Feb 19, 2015 7:36:47 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-53940"]
+Feb 19, 2015 7:36:47 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Tomcat
+Feb 19, 2015 7:36:47 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-53940"]
+Feb 19, 2015 7:36:47 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-53940"]
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+2015-02-19 19:36:47,277 INFO  KdcServer - Kerberos service stopped.
+2015-02-19 19:36:47,602 INFO  MiniKdc - Configuration:
+2015-02-19 19:36:47,602 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:47,602 INFO  MiniKdc -   debug: false
+2015-02-19 19:36:47,603 INFO  MiniKdc -   transport: TCP
+2015-02-19 19:36:47,603 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2015-02-19 19:36:47,603 INFO  MiniKdc -   org.name: EXAMPLE
+2015-02-19 19:36:47,603 INFO  MiniKdc -   kdc.port: 0
+2015-02-19 19:36:47,603 INFO  MiniKdc -   org.domain: COM
+2015-02-19 19:36:47,603 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2015-02-19 19:36:47,604 INFO  MiniKdc -   instance: DefaultKrbServer
+2015-02-19 19:36:47,604 INFO  MiniKdc -   kdc.bind.address: localhost
+2015-02-19 19:36:47,604 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:50,276 INFO  KdcServer - Kerberos service started.
+2015-02-19 19:36:50,277 INFO  MiniKdc - MiniKdc listening at port: 53945
+2015-02-19 19:36:50,277 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: /Users/maverick/git/H-MON2/hadoop-common-project/hadoop-auth/target/1424392607602/krb5.conf
+Feb 19, 2015 7:36:50 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-53946"]
+Feb 19, 2015 7:36:50 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Tomcat
+Feb 19, 2015 7:36:50 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.55
+Feb 19, 2015 7:36:50 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-53946"]
+Feb 19, 2015 7:36:50 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-53946"]
+Feb 19, 2015 7:36:50 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Tomcat
+Feb 19, 2015 7:36:50 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-53946"]
+Feb 19, 2015 7:36:50 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-53946"]
+2015-02-19 19:36:50,427 INFO  KdcServer - Kerberos service stopped.
+2015-02-19 19:36:50,753 INFO  MiniKdc - Configuration:
+2015-02-19 19:36:50,753 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:50,753 INFO  MiniKdc -   debug: false
+2015-02-19 19:36:50,753 INFO  MiniKdc -   transport: TCP
+2015-02-19 19:36:50,753 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2015-02-19 19:36:50,753 INFO  MiniKdc -   org.name: EXAMPLE
+2015-02-19 19:36:50,753 INFO  MiniKdc -   kdc.port: 0
+2015-02-19 19:36:50,754 INFO  MiniKdc -   org.domain: COM
+2015-02-19 19:36:50,754 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2015-02-19 19:36:50,754 INFO  MiniKdc -   instance: DefaultKrbServer
+2015-02-19 19:36:50,754 INFO  MiniKdc -   kdc.bind.address: localhost
+2015-02-19 19:36:50,754 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:52,679 INFO  KdcServer - Kerberos service started.
+2015-02-19 19:36:52,680 INFO  MiniKdc - MiniKdc listening at port: 53949
+2015-02-19 19:36:52,680 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: /Users/maverick/git/H-MON2/hadoop-common-project/hadoop-auth/target/1424392610753/krb5.conf
+Feb 19, 2015 7:36:52 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-53950"]
+Feb 19, 2015 7:36:52 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Tomcat
+Feb 19, 2015 7:36:52 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.55
+Feb 19, 2015 7:36:52 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-53950"]
+Feb 19, 2015 7:36:52 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-53950"]
+Feb 19, 2015 7:36:52 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Tomcat
+Feb 19, 2015 7:36:52 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-53950"]
+Feb 19, 2015 7:36:52 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-53950"]
+2015-02-19 19:36:52,855 INFO  KdcServer - Kerberos service stopped.
+2015-02-19 19:36:53,257 INFO  MiniKdc - Configuration:
+2015-02-19 19:36:53,258 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:53,258 INFO  MiniKdc -   debug: false
+2015-02-19 19:36:53,260 INFO  MiniKdc -   transport: TCP
+2015-02-19 19:36:53,260 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2015-02-19 19:36:53,260 INFO  MiniKdc -   org.name: EXAMPLE
+2015-02-19 19:36:53,264 INFO  MiniKdc -   kdc.port: 0
+2015-02-19 19:36:53,265 INFO  MiniKdc -   org.domain: COM
+2015-02-19 19:36:53,265 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2015-02-19 19:36:53,265 INFO  MiniKdc -   instance: DefaultKrbServer
+2015-02-19 19:36:53,265 INFO  MiniKdc -   kdc.bind.address: localhost
+2015-02-19 19:36:53,265 INFO  MiniKdc - ---------------------------------------------------------------
+2015-02-19 19:36:55,384 INFO  KdcServer - Kerberos service started.
+2015-02-19 19:36:55,385 INFO  MiniKdc - MiniKdc listening at port: 53954
+2015-02-19 19:36:55,386 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: /Users/maverick/git/H-MON2/hadoop-common-project/hadoop-auth/target/1424392613257/krb5.conf
+Debug is  true storeKey true useTicketCache true useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is target/be0d9981-f243-4ab5-b0fa-aec279023946 refreshKrb5Config is true principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+Acquire TGT from Cache
+Principal is client@EXAMPLE.COM
+null credentials from Ticket Cache
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Feb 19, 2015 7:36:55 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-53956"]
+Feb 19, 2015 7:36:55 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Tomcat
+Feb 19, 2015 7:36:55 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.55
+2015-02-19 19:36:55,473 INFO  KerberosAuthenticationHandler - Login using keytab target/be0d9981-f243-4ab5-b0fa-aec279023946, for principal HTTP/localhost@EXAMPLE.COM
+Feb 19, 2015 7:36:55 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-53956"]
+Feb 19, 2015 7:36:55 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-53956"]
+Feb 19, 2015 7:36:55 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Tomcat
+Feb 19, 2015 7:36:55 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-53956"]
+Feb 19, 2015 7:36:55 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-53956"]
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+2015-02-19 19:36:55,579 INFO  KdcServer - Kerberos service stopped.
