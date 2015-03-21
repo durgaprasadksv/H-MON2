@@ -197,6 +197,10 @@ int main(int argc, char **argv) {
   fprintf(LOGFILE, "main : requested yarn user is %s\n", yarn_user_name);
   fflush(LOGFILE);
 
+  printf("main : command provided %d\n",command);
+  printf("main : user is %s\n", user_detail->pw_name);
+  printf("main : requested yarn user is %s\n", yarn_user_name);
+
   switch (command) {
   case INITIALIZE_CONTAINER:
     if (argc < 9) {
