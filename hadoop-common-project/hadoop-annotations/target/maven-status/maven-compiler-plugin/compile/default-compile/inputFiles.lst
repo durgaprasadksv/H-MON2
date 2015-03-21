@@ -1,8 +1,0 @@
-/Users/maverick/git/H-MON2/hadoop-common-project/hadoop-annotations/src/main/java/org/apache/hadoop/classification/InterfaceAudience.java
-/Users/maverick/git/H-MON2/hadoop-common-project/hadoop-annotations/src/main/java/org/apache/hadoop/classification/tools/package-info.java
-/Users/maverick/git/H-MON2/hadoop-common-project/hadoop-annotations/src/main/java/org/apache/hadoop/classification/tools/ExcludePrivateAnnotationsJDiffDoclet.java
-/Users/maverick/git/H-MON2/hadoop-common-project/hadoop-annotations/src/main/java/org/apache/hadoop/classification/tools/StabilityOptions.java
-/Users/maverick/git/H-MON2/hadoop-common-project/hadoop-annotations/src/main/java/org/apache/hadoop/classification/InterfaceStability.java
-/Users/maverick/git/H-MON2/hadoop-common-project/hadoop-annotations/src/main/java/org/apache/hadoop/classification/tools/IncludePublicAnnotationsStandardDoclet.java
-/Users/maverick/git/H-MON2/hadoop-common-project/hadoop-annotations/src/main/java/org/apache/hadoop/classification/tools/ExcludePrivateAnnotationsStandardDoclet.java
-/Users/maverick/git/H-MON2/hadoop-common-project/hadoop-annotations/src/main/java/org/apache/hadoop/classification/tools/RootDocProcessor.java

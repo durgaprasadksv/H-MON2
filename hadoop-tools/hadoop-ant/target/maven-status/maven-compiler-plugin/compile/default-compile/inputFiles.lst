@@ -1,5 +1,0 @@
-/Users/maverick/git/H-MON2/hadoop-tools/hadoop-ant/src/main/java/org/apache/hadoop/ant/condition/DfsBaseConditional.java
-/Users/maverick/git/H-MON2/hadoop-tools/hadoop-ant/src/main/java/org/apache/hadoop/ant/condition/DfsExists.java
-/Users/maverick/git/H-MON2/hadoop-tools/hadoop-ant/src/main/java/org/apache/hadoop/ant/condition/DfsIsDir.java
-/Users/maverick/git/H-MON2/hadoop-tools/hadoop-ant/src/main/java/org/apache/hadoop/ant/DfsTask.java
-/Users/maverick/git/H-MON2/hadoop-tools/hadoop-ant/src/main/java/org/apache/hadoop/ant/condition/DfsZeroLen.java

@@ -1,6 +1,0 @@
-org/apache/hadoop/tools/rumen/TestPiecewiseLinearInterpolation.class
-org/apache/hadoop/tools/rumen/ConcatenatedInputFilesDemuxer$DelimitedInputStream.class
-org/apache/hadoop/tools/rumen/HistogramRawTestData.class
-org/apache/hadoop/tools/rumen/ConcatenatedInputFilesDemuxer.class
-org/apache/hadoop/tools/rumen/TestRandomSeedGenerator.class
-org/apache/hadoop/tools/rumen/TestHistograms.class
