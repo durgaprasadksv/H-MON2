@@ -425,7 +425,7 @@ class HTTPSenderThread(threading.Thread):
         
         out = ''
         for line in self.sendq:
-            line = 'put ' + line + self.tagstr
+            line = 'put ' + line
             out += line + '\n'
             LOG.debug('SENDING: %s', line)
 
