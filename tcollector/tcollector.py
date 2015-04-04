@@ -366,6 +366,86 @@ class ReaderThread(threading.Thread):
         if not self.readerq.nput(line):
             self.lines_dropped += 1
 
+class HTTPSenderThread(threading.Thread):
+    """ The HTTPSenderThread is responsible for sending metrics to InfluxDB
+    The database name and password along with Hostname, timeseries name is
+    needed for the POSTs to InfluxDB to work correctly"""
+
+    def __init__(self, reader, dryrun, host, port, self_report_stats, columns):
+        """Constructor.
+
+        Args:
+            reader: A reference to ReaderThread instance.
+            dryrun: dont Send metrics to InfluxDB if true
+            host: InfluxDB hostname
+            port: InfluxDB port
+            self_report_stats: Report tcollector statistics along with otherwise
+            columns: InfluxDB columns to write the data into.
+    """
+        super(HTTPSenderThread, self).__init__()
+
+        self.reader = reader
+        self.dryrun = dryrun
+        self.host = host
+        self.port = port
+        self.self_report_stats = self_report_stats
+        self.columns = columns
+        self.last_verify = 0
+        self.sendq = []
+
+    def run(self):
+        """Main loop.  A simple scheduler.  Loop waiting for 5
+           seconds for data on the queue.  If there's no data, just
+           loop and make sure our connection is still open.  If there
+           is data, wait 5 more seconds and grab all of the pending data and
+           send it.  A little better than sending every line as its
+           own packet."""
+
+        while ALIVE:
+            #TODO implement self.check_conn()
+            try:
+                line = self.reader.readerq.get(True, 5)
+            except Empty:
+                continue
+            self.sendq.append(line)
+            time.sleep(5)  # Wait for more data
+            while True:
+                try:
+                    line = self.reader.readerq.get(False)
+                except Empty:
+                    break
+                self.sendq.append(line)
+            self.send_data()
+
+    def send_data(self):
+        pass
+
+        """Send out queued data to InfluxDB"""
+        # construct the output string
+        
+        out = ''
+        for line in self.sendq:
+            line = 'put ' + line + self.tagstr
+            out += line + '\n'
+            LOG.debug('SENDING: %s', line)
+
+        if not out:
+            LOG.debug('send_data no data?')
+            return
+
+        # try sending our data.  if an exception occurs, just error and
+        # try sending again next time.
+        try:
+            if self.dryrun:
+                print out
+            else:
+                print 'sending out = ', out
+                #self.tsd.sendall(out)
+                self.sendq = []
+        except:
+            pass
+        # FIXME: we should be reading the result at some point to drain
+        # the packets out of the kernel's queue
 
 class SenderThread(threading.Thread):
     """The SenderThread is responsible for maintaining a connection
@@ -601,7 +681,7 @@ def parse_cmdline(argv):
                       default=False,
                       help='Run once, read and dedup data points from stdin.')
     parser.add_option('-p', '--port', dest='port', type='int',
-                      default=4242, metavar='PORT',
+                      default=8086, metavar='PORT',
                       help='Port to connect to the TSD instance on. '
                            'default=%default')
     parser.add_option('-v', dest='verbose', action='store_true', default=False,
@@ -684,8 +764,11 @@ def main(argv):
     reader.start()
 
     # and setup the sender to start writing out to the tsd
-    sender = SenderThread(reader, options.dryrun, options.host, options.port,
-                          not options.no_tcollector_stats, tagstr)
+    #sender = SenderThread(reader, options.dryrun, options.host, options.port,
+    #                      not options.no_tcollector_stats, tagstr)
+    sender = HTTPSenderThread(reader, options.dryrun, options.host, options.port, 
+        not options.no_tcollector_stats, '')
+    #reader, dryrun, host, port, self_report_stats, columns
     sender.start()
     LOG.info('SenderThread startup complete')
 
