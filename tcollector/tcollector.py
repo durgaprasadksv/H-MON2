@@ -52,6 +52,8 @@ def register_collector(collector):
     assert isinstance(collector, Collector), "collector=%r" % (collector,)
     # store it in the global list and initiate a kill for anybody with the
     # same name that happens to still be hanging around
+    print 'collector = ', collector
+    print 'COLLECTOR =', COLLECTORS
     if collector.name in COLLECTORS:
         col = COLLECTORS[collector.name]
         if col.proc is not None:
@@ -428,7 +430,7 @@ class HTTPSenderThread(threading.Thread):
             line = 'put ' + line
             out += line + '\n'
             LOG.debug('SENDING: %s', line)
-
+        
         if not out:
             LOG.debug('send_data no data?')
             return

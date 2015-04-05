@@ -14,9 +14,5 @@
         <cmdline>.*org.apache.hadoop.mapred.TaskTracker.*</cmdline>
         <displayname>TaskTracker</displayname>
     </process>
-    <process>
-      <cmdline>.*pvfs2-client-core.*</cmdline>
-      <displayname>PVFS</displayname>
-    </process>
   </processes>
 </configuration>
