@@ -427,8 +427,7 @@ class HTTPSenderThread(threading.Thread):
             self.send_data()
 
     def send_data(self):
-        pass
-
+        
         """Send out queued data to InfluxDB"""
         # construct the output string
         
