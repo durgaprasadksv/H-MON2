@@ -305,7 +305,7 @@ class ReaderThread(threading.Thread):
                           '(\d+)\s+'               # Timestamp.
                           '(\S+?)'                 # Value (int or float).
                           '((?:\s+[-_./a-zA-Z0-9]+=[-_./a-zA-Z0-9]+)*)$', # Tags
-                          'proc*'
+                          'proc*',
                           line)
         if parsed is None:
             LOG.warning('%s sent invalid data: %s', col.name, line)
