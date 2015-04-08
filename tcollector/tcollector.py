@@ -769,7 +769,7 @@ def main(argv):
 
     # at this point we're ready to start processing, so start the ReaderThread
     # so we can have it running and pulling in data for us
-    reader = ReaderThread(options.dedupinterval, options.evictinterval)
+    reader = HTTPReaderThread(options.dedupinterval, options.evictinterval)
     reader.start()
 
     # and setup the sender to start writing out to the tsd
