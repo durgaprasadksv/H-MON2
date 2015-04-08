@@ -427,6 +427,7 @@ class HTTPSenderThread(threading.Thread):
         for line in self.sendq:
             line = 'put ' + line
             out += line + '\n'
+            print 'collect OUT in HTTPSenderThread :', out
             LOG.debug('SENDING: %s', line)
         
         if not out:
