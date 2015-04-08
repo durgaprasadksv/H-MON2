@@ -52,8 +52,6 @@ def register_collector(collector):
     assert isinstance(collector, Collector), "collector=%r" % (collector,)
     # store it in the global list and initiate a kill for anybody with the
     # same name that happens to still be hanging around
-    print 'collector = ', collector
-    print 'COLLECTOR =', COLLECTORS
     if collector.name in COLLECTORS:
         col = COLLECTORS[collector.name]
         if col.proc is not None:
@@ -768,7 +766,7 @@ def main(argv):
     # and setup the sender to start writing out to the tsd
     #sender = SenderThread(reader, options.dryrun, options.host, options.port,
     #                      not options.no_tcollector_stats, tagstr)
-    sender = HTTPSenderThread(reader, options.dryrun, options.host, options.port, 
+    sender = SenderThread(reader, options.dryrun, options.host, options.port, 
         not options.no_tcollector_stats, '')
     #reader, dryrun, host, port, self_report_stats, columns
     sender.start()
