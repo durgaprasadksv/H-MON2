@@ -164,7 +164,7 @@ def main():
     ts = int(time.time())
     for line in f_entropy_avail:
         print "proc.kernel.entropy_avail %d %s" % (ts, line.strip())
-    print_numa_stats(numastats)
+    #print_numa_stats(numastats)
     sys.stdout.flush()
 
 if __name__ == "__main__":

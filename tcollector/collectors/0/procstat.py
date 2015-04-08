@@ -34,7 +34,7 @@ def main():
               matcher.SumMatcher(host)]
   for mat in matchers:
     procmonitor.register_matcher(mat)
-  procmonitor.initialize()
+  procmonitor.initialize()\
   procmonitor.run(10)
 
 if __name__ == "__main__":

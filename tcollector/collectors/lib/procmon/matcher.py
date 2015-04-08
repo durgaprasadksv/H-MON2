@@ -380,6 +380,7 @@ class SumMatcher:
         return names
 
 def test():
+    print 'EXECUTING TEST HERE'
     import config
     config_parser = config.ProcmonConfigParser()
     mrconf = config_parser.load_mrtask_config('../../etc/mrtask.xml')

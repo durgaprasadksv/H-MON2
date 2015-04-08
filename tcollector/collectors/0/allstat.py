@@ -41,6 +41,6 @@ def main():
                 plugin[0] += min_interval
         time.sleep(min_interval)
 
-if __name__ == "__main__":
-    main()
+#if __name__ == "__main__":
+#    main()
 
