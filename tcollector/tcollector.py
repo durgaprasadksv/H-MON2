@@ -312,6 +312,9 @@ class ReaderThread(threading.Thread):
             return
         metric, timestamp, value, tags = parsed.groups()
         timestamp = int(timestamp)
+        
+        #we dont need dedup detection for now.
+
 
         # De-dupe detection...  To reduce the number of points we send to the
         # TSD, we suppress sending values of metrics that don't change to
@@ -323,6 +326,13 @@ class ReaderThread(threading.Thread):
         # slopes of graphs correct).
         #
         key = (metric, tags)
+        col.values[key] = (value, False, line, timestamp)
+        col.lines_sent += 1
+        if not self.readerq.nput(line):
+            self.lines_dropped += 1
+        
+        print 'ADDED LINE TO THE QUEUE = ', line 
+        """
         if key in col.values:
             # if the timestamp isn't > than the previous one, ignore this value
             if timestamp <= col.values[key][3]:
@@ -361,10 +371,7 @@ class ReaderThread(threading.Thread):
         # The array consists of:
         # [ the metric's value, if this value was repeated, the line of data,
         #   the value's timestamp that it last changed ]
-        col.values[key] = (value, False, line, timestamp)
-        col.lines_sent += 1
-        if not self.readerq.nput(line):
-            self.lines_dropped += 1
+        """
 
 class HTTPSenderThread(threading.Thread):
     """ The HTTPSenderThread is responsible for sending metrics to InfluxDB

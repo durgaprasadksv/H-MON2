@@ -10,9 +10,8 @@
         <cmdline>.*org.apache.hadoop.hdfs.server.datanode.DataNode.*</cmdline>
         <displayname>DataNode</displayname>
     </process>
-    <process>
-        <cmdline>.*org.apache.hadoop.mapred.TaskTracker.*</cmdline>
-        <displayname>TaskTracker</displayname>
-    </process>
   </processes>
+  <hosts>
+    <hostname>localhost</hostname>
+  </hosts>
 </configuration>
