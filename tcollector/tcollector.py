@@ -19,7 +19,7 @@
 #
 # by Mark Smith <msmith@stumbleupon.com>.
 #
-
+import json
 import atexit
 import errno
 import fcntl
@@ -37,8 +37,7 @@ from Queue import Queue
 from Queue import Empty
 from Queue import Full
 from optparse import OptionParser
-
-
+import requests
 # global variables.
 COLLECTORS = {}
 GENERATION = 0
@@ -380,7 +379,7 @@ class HTTPSenderThread(threading.Thread):
     The database name and password along with Hostname, timeseries name is
     needed for the POSTs to InfluxDB to work correctly"""
 
-    def __init__(self, reader, dryrun, host, port, self_report_stats, columns):
+    def __init__(self, reader, dryrun, host, port, self_report_stats, columns, url):
         """Constructor.
 
         Args:
@@ -401,6 +400,7 @@ class HTTPSenderThread(threading.Thread):
         self.columns = columns
         self.last_verify = 0
         self.sendq = []
+	self.url = url
 
     def run(self):
         """Main loop.  A simple scheduler.  Loop waiting for 5
@@ -433,11 +433,19 @@ class HTTPSenderThread(threading.Thread):
         
         out = ''
         for line in self.sendq:
-            line = 'put ' + line
-            out += line + '\n'
-            print 'collect OUT in HTTPSenderThread :', out
-            LOG.debug('SENDING: %s', line)
-        
+	    #process.cpu_user_time 1428531363 21598.0 proc=DataNode
+	    #[{'points': [[45]], 'name': 'hd_used', 'columns': ['value']}]
+	    vals = line.split(' ')
+	    print vals
+	    resp = []
+            map_resp = {}
+	    map_resp['points'] = [[vals[2]]]
+	    map_resp['name']= vals[3].split('=')[1]
+	    map_resp['columns'] = [vals[0].split('.')[1]]
+	    resp.append(map_resp)
+            print 'collect OUT in HTTPSenderThread :', resp
+	    requests.post(self.url, json.dumps(resp))
+            #LOG.debug('SENDING: %s', line)
         if not out:
             LOG.debug('send_data no data?')
             return
@@ -769,14 +777,14 @@ def main(argv):
 
     # at this point we're ready to start processing, so start the ReaderThread
     # so we can have it running and pulling in data for us
-    reader = HTTPReaderThread(options.dedupinterval, options.evictinterval)
+    reader = ReaderThread(options.dedupinterval, options.evictinterval)
     reader.start()
 
     # and setup the sender to start writing out to the tsd
     #sender = SenderThread(reader, options.dryrun, options.host, options.port,
     #                      not options.no_tcollector_stats, tagstr)
-    sender = SenderThread(reader, options.dryrun, options.host, options.port, 
-        not options.no_tcollector_stats, '')
+    sender = HTTPSenderThread(reader, options.dryrun, options.host, options.port, 
+        not options.no_tcollector_stats, '', 'http://ec2-52-5-186-10.compute-1.amazonaws.com:8086/db/HMON/series?u=root&p=root')
     #reader, dryrun, host, port, self_report_stats, columns
     sender.start()
     LOG.info('SenderThread startup complete')
